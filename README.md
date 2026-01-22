@@ -1,5 +1,8 @@
 # EV Charging Demand Analytics Platform
 
+End-to-end EV charging demand analytics pipeline using Python, SQL Server, AWS S3, Excel, and Power BI.
+
+
 ##  Project Overview
 
 This project is an end-to-end data analytics pipeline that analyzes electric vehicle (EV) charging demand patterns across major Indian cities using session-level telemetry data.
@@ -92,6 +95,40 @@ Key questions answered:
 - Power BI
 
 ---
+
+## Project Structure
+
+```
+ev_charging_analytics/
+│   LICENSE
+│   README.md
+│
+├── data_clean/
+│   └── ev_sessions_clean.csv
+│
+├── data_raw/
+│   └── ev_sessions_raw.csv
+│
+├── etl/
+│   ├── clean_transform.py
+│   └── generate_data.py
+│
+├── excel/
+│   └── qa_checks.xlsx
+│
+├── images/
+│   └── evDashboard.png
+│
+├── powerbi/
+│   └── ev_dashboard.pbix
+│
+└── sql/
+    ├── analytics_views.sql
+    ├── create_tables.sql
+    └── load_fact.sql
+
+
+```
 
 ##  Key Insights
 
